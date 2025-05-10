@@ -74,7 +74,6 @@ This project provides a script that helps users automatically identify and delet
 Found a bug or typo? Have an improvement suggestion?
 - Open an [issue](https://github.com/KodoPengin/Del_U3A/issues)
 - Start a [discussion](https://github.com/KodoPengin/Del_U3A/discussions)
-- Or contact me via [GameIndustry.eu](https://www.gameindustry.eu/u/kontakt/)
 
 I'm always happy to improve the project based on your feedback.
 

@@ -74,7 +74,6 @@ Dieses Projekt bietet ein Skript, das diese Dateien automatisch aufspürt und au
 Du hast einen Fehler gefunden oder Verbesserungsvorschläge?
 - Öffne ein [Issue](https://github.com/KodoPengin/SteamCleaner/issues)
 - Starte eine [Diskussion](https://github.com/KodoPengin/SteamCleaner/discussions)
-- Oder kontaktiere mich direkt über [GameIndustry.eu](https://www.gameindustry.eu/u/kontakt/)
 
 Dein Feedback ist willkommen – das Projekt wird kontinuierlich verbessert.
 
