@@ -18,12 +18,12 @@ if '%errorlevel%' NEQ '0' (
 )
 if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs"
 
-:: Switch to the script's directory (important after UAC)
+:: Switch to script directory
 cd /d "%~dp0"
 
-:: Ensure steam.exe exists
+:: Ensure Steam is present
 if not exist "%~dp0%steam.exe" (
-    echo %RED%Error: Please run this in the Steam directory.%RESET%
+    echo %RED%Error: Please run this script from within the Steam directory.%RESET%
     pause
     exit /B
 )
@@ -34,9 +34,9 @@ echo %GREEN%--------------------------------------------------------------------
 echo # GameIndustry.eu - Steam Cleaner %version%
 echo -------------------------------------------------------------------------%RESET%
 echo.
-echo 1^) Remove crash handlers & spyware
+echo 1^) Remove crash handler ^& spyware
 echo 2^) Clear library cache (httpcache, librarycache, stats)
-echo 3^) Clear download & shader cache
+echo 3^) Clear download ^& shader cache
 echo 4^) Clear HTML cache
 echo 5^) Delete leftover modding files (CSS)
 echo 6^) About
@@ -62,7 +62,7 @@ if %errorlevel%==0 (
     echo %RED%Steam is running - terminating...%RESET%
     taskkill /F /T /IM steam.exe >nul 2>&1
 ) else (
-    echo %GREEN%Steam is not active.%RESET%
+    echo %GREEN%Steam is not running.%RESET%
 )
 
 timeout /t 2 >nul
@@ -72,7 +72,7 @@ if not exist "steam.cfg" (
     echo BootStrapperForceSelfUpdate=disable>> steam.cfg
 )
 echo.
-echo %GREEN%1. Removing Crashlytics, Logs, Dumps...%RESET%
+echo %GREEN%1. Removing crash handlers, logs and dumps...%RESET%
 del /f /q ^
   ".crash" ^
   "bin\secure_desktop_capture.*" ^
@@ -94,13 +94,12 @@ rd /s /q "bin\cef\cef.win7" 2>nul
 rd /s /q "logs" 2>nul
 rd /s /q "dumps" 2>nul
 
-echo %GREEN%2. Removing system crash dumps & analytics...%RESET%
+echo %GREEN%2. Removing system crash dumps and analytics data...%RESET%
 set "foldersToDelete=%userprofile%\AppData\Local\CrashDumps %userprofile%\AppData\Local\CEF\User Data\Crashpad %userprofile%\AppData\Local\CrashReportClient %userprofile%\AppData\Local\T2GP Launcher\app-1.0.4.2070 %userprofile%\AppData\Local\GameAnalytics %userprofile%\AppData\Local\UnrealEngine %userprofile%\AppData\Local\UniSDK %userprofile%\AppData\Local\BuffPanel"
 for %%i in (%foldersToDelete%) do if exist "%%i" rd /s /q "%%i"
 
-echo %GREEN%3. Removing third-party crash files...%RESET%
+echo %GREEN%3. Removing third-party crash-related files...%RESET%
 setlocal enabledelayedexpansion
-
 set "deletedCount=0"
 set "filelist=CrashReport.exe CrashUploader.Base.Azure.dll CrashUploader.Base.dll CrashUploader.Base.UI.dll CrashUploader.Publish.exe CrashUploader.Publish.exe.config crashpad_handler.exe CrashSender1402.exe CrashSender1403.exe crashrpt_lang.ini CrashRpt1403.dll CrashRptProbe1403.dll CrashReporter.dll CrashReporter.exe CrashReporter.exe.config CrashReportClient.exe DLogUploader.exe UnrealCEFSubProcess.exe CrashReportClient.pdb CrashReporter.resources.dll REDEngineErrorReporter.exe abbey_crash_reporter.exe crashmsg.exe output_log.txt telemetry64.dll apex_crash_handler.exe RemoteCrashSender.exe BsSndRpt.exe BugSplatRc.dll BsUnityCrashHandler.exe log.txt steam_autocloud.vdf UnityCrashHandler32.exe UnityCrashHandler64.exe"
 
@@ -114,14 +113,14 @@ for %%i in (%filelist%) do (
 )
 echo.
 if !deletedCount! gtr 0 (
-    echo [INFO] !deletedCount! third-party crash files were removed.
+    echo [INFO] !deletedCount! third-party crash-related files were removed.
 ) else (
-    echo [INFO] Great, no third-party crash files found.
+    echo [INFO] No third-party crash files found.
 )
-
 endlocal
+
 echo.
-echo %GREEN%4. Removing empty directories...%RESET%
+echo %GREEN%4. Removing empty folders...%RESET%
 setlocal EnableDelayedExpansion
 set "deletedFolders=0"
 for /f "delims=" %%d in ('dir /ad /b /s ^| sort /R') do (
@@ -147,7 +146,7 @@ goto menu
 cls
 echo %GREEN%Clearing library cache...%RESET%
 echo.
-echo Note: The deleted folders will be recreated on next Steam launch.
+echo Note: These folders will be automatically recreated when Steam starts.
 rd /s /q "appcache\httpcache" >nul 2>&1
 rd /s /q "appcache\librarycache" >nul 2>&1
 rd /s /q "appcache\stats" >nul 2>&1
@@ -158,7 +157,7 @@ goto menu
 
 :DL_Cache
 cls
-echo %GREEN%Clearing download & shader cache...%RESET%
+echo %GREEN%Clearing download ^& shader cache...%RESET%
 rd /s /q "steamapps\downloading" >nul 2>&1
 rd /s /q "steamapps\depotcache" >nul 2>&1
 rd /s /q "steamapps\shadercache" >nul 2>&1
@@ -197,7 +196,7 @@ goto menu
 
 :about
 cls
-echo %GREEN%About this script%RESET%
+echo %GREEN%About this Steam cleanup script%RESET%
 echo.
 echo Project page:  https://gameindustry.eu/
 echo Donations:     https://gameindustry.eu/donations/

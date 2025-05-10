@@ -29,7 +29,7 @@ Dieses Projekt bietet ein Skript, das diese Dateien automatisch aufspürt und au
 
 ## 🔧 Funktionen
 
-- Entfernt Crash-Handler, Logdateien und Telemetriekomponenten u. a. von:
+- Entfernt Crash-Handler, Logdateien und Telemetriekomponenten u.a. von:
   - Unity Technologies  
   - Epic Games  
   - Microsoft Corporation  
