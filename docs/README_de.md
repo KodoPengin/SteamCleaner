@@ -8,7 +8,7 @@
   <span> · </span>
   <a href="https://github.com/KodoPengin/SteamCleaner/discussions">Diskussionen</a>
   <span> · </span>
-  <a href="/README.md">Englisch</a>
+  <a href="/README.md">Englische Readme</a>
 </h3>
 
 <p align="center">
@@ -65,8 +65,8 @@ Dieses Projekt bietet ein Skript, das diese Dateien automatisch aufspürt und au
 ## 🖼️ Screenshots
 
 <p float="left">
-  <img src="https://www.gameindustry.eu/images/git/del_U3A.webp" alt="Hauptmenü" width="400">
-  <img src="https://www.gameindustry.eu/images/git/del_U3A_explorer.webp" alt="Dateibereinigung" width="400">
+  <img src="https://www.gameindustry.eu/images/git/del_U3A.webp?ts=20250510114745" alt="Menüansicht" width="400">
+  <img src="https://www.gameindustry.eu/images/git/del_U3A_explorer.webp?ts=20250510114746" alt="Führe den Cleaner aus dem Steam-Verzeichnis aus." width="400">
 </p>
 
 ## 🐞 Fehler & Beiträge

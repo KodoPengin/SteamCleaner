@@ -8,7 +8,7 @@
   <span> · </span>
   <a href="https://github.com/KodoPengin/Del_U3A/discussions">Discussions</a>
   <span> · </span>
-  <a href="/docs/README_de.md">Deutsch</a>
+  <a href="/docs/README_de.md">Deutsche Readme</a>
 </h3>
 
 <p align="center">
@@ -65,8 +65,8 @@ This project provides a script that helps users automatically identify and delet
 ## 🖼️ Screenshots
 
 <p float="left">
-  <img src="https://www.gameindustry.eu/images/git/del_U3A.webp" alt="Main Menu" width="400">
-  <img src="https://www.gameindustry.eu/images/git/del_U3A_explorer.webp" alt="File Cleanup" width="400">
+  <img src="https://www.gameindustry.eu/images/git/del_U3A.webp?ts=20250510114745" alt="Menu" width="400">
+  <img src="https://www.gameindustry.eu/images/git/del_U3A_explorer.webp?ts=20250510114746" alt="Run the cleaner from the Steam directory" width="400">
 </p>
 
 ## 🐞 Bugs & Contributions
