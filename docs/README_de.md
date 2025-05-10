@@ -1,77 +1,104 @@
-<h1 align="center">Spyware Cleaner</h1>
-<h3 align="center">Entferne Spyware, Telemetrie und ungewollte Dateien aus deinen Spiele-Verzeichnissen</h3>
+<h1 align="center">Spyware Cleaner für Steam</h1>
+<h3 align="center">Entferne Telemetrie, Crash-Analysen und unerwünschte Dateien aus deinem Steam- und Spieleverzeichnis</h3>
 
 <br />
 
 <h3 align="center">
-  <a href="https://github.com/KodoPengin/Del_U3A/issues">Fehler melden</a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/issues">Fehler melden</a>
   <span> · </span>
-  Support: <a href="https://github.com/KodoPengin/Del_U3A/discussions">Diskussionen</a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/discussions">Diskussionen</a>
   <span> · </span>
- <a href="../README.md">Englisch</a>
+  <a href="/README.md">Englisch</a>
 </h3>
- <p align="center">
-    <a href="https://github.com/KodoPengin/Del_U3A/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-    <a href="https://github.com/KodoPengin/Del_U3A/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-    <a href="https://github.com/KodoPengin/Del_U3A/network/members"><img alt="Members" src="https://img.shields.io/github/forks/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-    <a href="https://github.com/KodoPengin/Del_U3A/issues"><img alt="Issues" src="https://img.shields.io/github/issues/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-		<a href="https://gameindustry.eu"><img alt="Website" src="https://img.shields.io/badge/website-online-blue?url=https%3A%2F%2Fgameindustry.eu?color=0088ff" /></a>
-  </p>
-<br />
 
-## 📝 Projektbeschreibung
-Mit dem Steam-Client der Valve Corporation und den installierten Spielen zahlloser Entwickler werden viele Dateien auf den Festplatten der Nutzer installiert, die ohne deren Zustimmung (persönliche) Daten aufnehmen, schreiben und hochladen. Dazu gehören Telemetrie- und Analysedaten, Benutzerprofile, Fehlerberichte und mehr.
-
-Da viele Dinge von Firewall-Systemen automatisch zugelassen werden, müssen die Benutzer erst recht vorsichtig sein, bevor sie den Client und/oder ihre Spiele starten.
-
-Besonders bei großen Bibliotheken wäre es sinnlos, jeden Installationsordner manuell auf Spyware zu überprüfen. Deshalb habe ich eine kleine Batch-Datei geschrieben, die diese Aufgabe übernimmt und die Verzeichnisse von Steam und Spielen bereinigt.
-
-### Special features:
-- Option zum Löschen gängiger Spyware und Crashlytics von Unity Technologies, ApS, Microsoft Corporation, Google LLC, Avalanche Studios, Epic Games, Inc. und vielen Weiteren
-- Option zum Bereinigen Ihrer Steam-Ordner (Bibliotheks-Cache, Bild, Download und Shadercache)
-- Option zum Löschen des Steam-HTML-Caches
-
-## 📖 Installation
-Die Datei "del_u3a_de.bat" wird in das Hauptverzeichnis von Steam oder des angelegten Bibliothekordners kopiert und kann von dort ausgeführt werden
-In den Bibliotheksordnern ist keine steam.cfg notwendig und kann gelöscht werden. Die Steam.cfg im Installationsverzeichnis von Steam selbst nur entfernen für Clientupdates.
-
-Werden nach dem Löschen der vorhanden Spywaredateien und Crashlytics neue Spiele mit denselben Diensten installiert, kann die Batch nochmal gestartet werden um auch diese Dateien zu entfernen.
-
-### Dateinamen:
-
-Deutsh:
-- del_u3a_de.bat
-- readme_DE.txt
-
-English:
-- del_u3a_en.bat
-- readme_EN.txt
-
-### Screenshots:
-<p float="left">
-<img src="https://www.gameindustry.eu/images/git/del_U3A.webp" alt="Main page" width="400"">
-<img src="https://www.gameindustry.eu/images/git/del_U3A_explorer.webp" alt="Discussions" width="400"">
+<p align="center">
+  <a href="https://github.com/KodoPengin/SteamCleaner/watchers"><img alt="Beobachter" src="https://img.shields.io/github/watchers/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/stargazers"><img alt="Sterne" src="https://img.shields.io/github/stars/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/issues"><img alt="Issues" src="https://img.shields.io/github/issues/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://gameindustry.eu"><img alt="Website" src="https://img.shields.io/badge/website-online-blue?url=https%3A%2F%2Fgameindustry.eu?color=0088ff" /></a>
 </p>
 
-## 🐞 Fehler, Irrtümer, Fragen:
-Auch ich bin nicht perfekt und es kann sein, dass es falsche Einträge oder Rechtschreibfehler gibt. Wenn dies der Fall ist, zögern Sie nicht, mich so schnell wie möglich zu kontaktieren - Bitte öffnen Sie ein Ticket, kontaktieren Sie mich in Steam oder über meine Website. Korrekturen (wenn nötig) werden schnell umgesetzt.
+<br />
 
-## © Copyright, Support & License
-Das Del_U3A Script wurde entwickelt und wird gepflegt von © gameindustry.eu<br><br>
-Wenn irgendwelche Informationen in den Dateien vom Original abweichen, sind die Dateien nicht von der offiziellen Quelle
+## 📝 Projektübersicht
 
-Website & Support: <a href="https://www.gameindustry.eu">GameIndustry.eu</a> and <a href="https://www.gameindustry.eu/u/kontakt/">Kontaktseite</a><br>
-Steamgruppe & Support: <a href="https://steamcommunity.com/groups/penguindome/">Spyware in games? No thanks!</a>
+Der Steam-Client sowie viele Spiele erfassen über Telemetrie, Analysefunktionen, Absturzberichte und andere Mechanismen Informationen – häufig ohne ausdrückliche Zustimmung des Nutzers. Diese Dateien können sich über die Zeit ansammeln und sowohl die Privatsphäre als auch die Systemleistung beeinträchtigen.
 
-# Andere Projekte
-Hosts Templates<br>
-Einzigartige Hostvorlagen zur Verbesserung der eigenen Privatsphäre in Spielen, Websites und regulärer Software<br>
-Besuche <a href="https://github.com/KodoPengin/GameIndustry-hosts-Template">GameIndustry hosts Templates</a>
+Dieses Projekt bietet ein Skript, das diese Dateien automatisch aufspürt und aus dem Steam-Hauptverzeichnis sowie aus Spielebibliotheken entfernt.
 
-PenginUI (Steam Skin)<br>
-Minimaler Steam-Skin mit Fokus aufs Wesentliche (WIP)<br>
-Besuche <a href="https://github.com/KodoPengin/PenginUI">PenginUI - Custom Steam Skin</a>
+## 🔧 Funktionen
 
-Sammlung von IP-Adressen<br>
-Ipv4 Adressen zur Ergänzung der eigenen Serversicherheit<br>
-Besuche <a href="https://github.com/KodoPengin/Collection-of-IP-addresses">Sammlung von IPv4 Adressen</a>
+- Entfernt Crash-Handler, Logdateien und Telemetriekomponenten u. a. von:
+  - Unity Technologies  
+  - Epic Games  
+  - Microsoft Corporation  
+  - Google LLC  
+  - Avalanche Studios  
+  - ... und weiteren Anbietern
+- Bereinigt Steam-spezifische Caches:
+  - Bibliotheks-Cache (`httpcache`, `librarycache`, `stats`)
+  - Download- und Shader-Cache
+  - HTML-Browsercache von Steam
+- Löscht übriggebliebene Modding-Dateien (`*.custom.css` usw.)
+- Löscht leere Ordner rekursiv zur besseren Verzeichnisstruktur
+- Erkennt laufende Steam-Prozesse und beendet sie automatisch vor dem Bereinigen
+- Prüft auf Administratorrechte und fordert diese bei Bedarf an
+
+## 📦 Installation & Nutzung
+
+1. **Kopiere das passende Skript** (`SteamCleaner_de.bat` oder `SteamCleaner_en.bat`) in dein Steam-Installationsverzeichnis oder einen Bibliotheksordner.
+2. **Starte das Skript mit Administratorrechten.**
+3. Das Skript zeigt dir ein Menü mit den verfügbaren Reinigungsoptionen.
+
+> **Hinweise:**  
+> - Im Hauptverzeichnis von Steam verhindert die Datei `steam.cfg` automatische Updates. Sie kann bei Bedarf gelöscht werden.  
+> - Das Skript kann jederzeit erneut ausgeführt werden – insbesondere nach der Installation neuer Spiele.
+
+### 📁 Dateinamen
+
+| Sprache | Skriptdatei            | Readme-Datei     |
+|---------|------------------------|------------------|
+| Englisch| `SteamCleaner_en.bat`  | `readme_EN.txt`  |
+| Deutsch | `SteamCleaner_de.bat`  | `readme_DE.txt`  |
+
+## 🖼️ Screenshots
+
+<p float="left">
+  <img src="https://www.gameindustry.eu/images/git/del_U3A.webp" alt="Hauptmenü" width="400">
+  <img src="https://www.gameindustry.eu/images/git/del_U3A_explorer.webp" alt="Dateibereinigung" width="400">
+</p>
+
+## 🐞 Fehler & Beiträge
+
+Du hast einen Fehler gefunden oder Verbesserungsvorschläge?
+- Öffne ein [Issue](https://github.com/KodoPengin/SteamCleaner/issues)
+- Starte eine [Diskussion](https://github.com/KodoPengin/SteamCleaner/discussions)
+- Oder kontaktiere mich direkt über [GameIndustry.eu](https://www.gameindustry.eu/u/kontakt/)
+
+Dein Feedback ist willkommen – das Projekt wird kontinuierlich verbessert.
+
+## 🔒 Lizenz & Credits
+
+Dieses Skript wurde von **[GameIndustry.eu](https://www.gameindustry.eu)** entwickelt und wird aktiv gepflegt.
+
+> **Wichtig:**  
+> Verwende nur Versionen aus der offiziellen Quelle. Bei abweichendem Inhalt handelt es sich womöglich um eine manipulierte Datei.
+
+Support & Kontakt:
+- [Website](https://www.gameindustry.eu)
+- [Kontaktformular](https://www.gameindustry.eu/contact/)
+- [Steam-Gruppe: Spyware in games? No thanks!](https://steamcommunity.com/groups/penguindome/)
+
+---
+
+## 🔗 Weitere Projekte
+
+- **[GameIndustry Hosts Templates](https://github.com/KodoPengin/GameIndustry-hosts-Template)**  
+  Maßgeschneiderte Host-Dateien für mehr Privatsphäre in Spielen und Anwendungen.
+
+- **[PenginUI – Steam Skin](https://github.com/KodoPengin/PenginUI)**  
+  Minimalistisches und aufgeräumtes Steam-Design (Work in Progress).
+
+- **[qBittorrent IPFilter Updater](https://github.com/KodoPengin/python-ipfilter-qbittorent)**  
+  Ein Python-Skript, das automatisch mehrere IP-Blocklisten herunterlädt, zusammenführt und für qBittorrent konvertiert.
