@@ -74,4 +74,4 @@ Version:  3.0.0
 Date:     May 10, 2025
 
 Filename: SteamCleaner.bat
-Sha 256: 97f19aee56448b34d09a0071fc6fdeb24ff5b8f063f9d32f920cf3890c2ef2f3
+Sha 256: 97a0f38a6796dc8caf53a0e387ba8d458186f1020176ab61d9b5be8c7e0fad43
