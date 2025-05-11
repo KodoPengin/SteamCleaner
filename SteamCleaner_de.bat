@@ -8,7 +8,7 @@ set "GRUEN=%ESC%[92m"
 set "ROT=%ESC%[31m"
 set "RESET=%ESC%[0m"
 
-:: Adminrechte prüfen
+:: Admincheck
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
@@ -23,7 +23,7 @@ cd /d "%~dp0"
 
 :: Sicherstellen, dass steam.exe existiert
 if not exist "%~dp0%steam.exe" (
-    echo %ROT%Fehler: Bitte im Steam-Verzeichnis ausführen.%RESET%
+    echo %ROT%Fehler: Script bitte im Steam-Verzeichnis starten.%RESET%
     pause
     exit /B
 )
@@ -38,7 +38,7 @@ echo 1^) Crashhandler ^& Spyware entfernen
 echo 2^) Bibliothek-Cache leeren (httpcache, librarycache, stats)
 echo 3^) Download- ^& Shadercache leeren
 echo 4^) HTML-Cache leeren
-echo 5^) Modding-Reste (CSS-Dateien) löschen
+echo 5^) Modding-Reste (CSS-Dateien) entfernen
 echo 6^) About
 echo 7^) Beenden
 echo.
@@ -55,11 +55,11 @@ goto menu
 
 :Steam
 cls
-echo %GRUEN%Überprüfe, ob Steam läuft...%RESET%
+echo %GRUEN%Teste Steam-Status...%RESET%
 tasklist /FI "IMAGENAME eq steam.exe" | find /I "steam.exe" >nul
 echo.
 if %errorlevel%==0 (
-    echo %ROT%Steam läuft - wird beendet...%RESET%
+    echo %ROT%Steam ist aktiv - wird beendet...%RESET%
     taskkill /F /T /IM steam.exe >nul 2>&1
 ) else (
     echo %GRUEN%Steam ist nicht aktiv.%RESET%
@@ -147,7 +147,7 @@ goto menu
 cls
 echo %GRUEN%Bibliothek-Cache wird geleert...%RESET%
 echo.
-echo Hinweis: Die geloeschten Ordner werden beim nächsten Start von Steam automatisch wiederhergestellt.
+echo Hinweis: Die entfernten Ordner werden beim  Start von Steam automatisch wiederhergestellt.
 rd /s /q "appcache\httpcache" >nul 2>&1
 rd /s /q "appcache\librarycache" >nul 2>&1
 rd /s /q "appcache\stats" >nul 2>&1
@@ -172,7 +172,7 @@ goto menu
 
 :HT_Cache
 cls
-echo %GRUEN%Überprüfe Steam-Status...%RESET%
+echo %GRUEN%Ermittle Steam-Status...%RESET%
 tasklist /FI "IMAGENAME eq steam.exe" | find /I "steam.exe" >nul
 if %errorlevel%==0 (
     echo %ROT%Steam wird beendet...%RESET%
@@ -188,7 +188,7 @@ goto menu
 
 :CF_Del
 cls
-echo %GRUEN%Modding-Reste (CSS-Dateien) werden gelöscht...%RESET%
+echo %GRUEN%Modding-Reste (CSS-Dateien) werden entfernt...%RESET%
 del /s /q "clientui\*.custom.css" "clientui\*.original.css" >nul 2>&1
 del /s /q "steamui\*.custom.css" "steamui\*.original.css" >nul 2>&1
 echo %GRUEN%Fertig.%RESET%
@@ -197,7 +197,7 @@ goto menu
 
 :about
 cls
-echo %GRUEN%Über das Script%RESET%
+echo %GRUEN%Hinweise zum Script%RESET%
 echo.
 echo Projektseite:  https://gameindustry.eu/
 echo Spenden:       https://gameindustry.eu/donations/
@@ -207,7 +207,7 @@ echo Version:       %version%
 echo.
 echo %GRUEN%Dateiinformationen:%RESET%
 set "filename=%~nx0"
-for %%A in ("%~nx0") do echo Name: %%~nxA - Größe: %%~zA Bytes
+for %%A in ("%~nx0") do echo Name: %%~nxA - Dateiumfang: %%~zA Bytes
 
 for /f "tokens=* delims=" %%h in ('CertUtil -hashfile "%~f0" SHA256 ^| find /i /v "SHA256" ^| find /i /v "certutil"') do set "sha=%%h"
 echo SHA256: %sha%
