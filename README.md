@@ -4,18 +4,18 @@
 <br />
 
 <h3 align="center">
-  <a href="https://github.com/KodoPengin/Del_U3A/issues">Report a Bug</a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/issues">Report a Bug</a>
   <span> · </span>
-  <a href="https://github.com/KodoPengin/Del_U3A/discussions">Discussions</a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/discussions">Discussions</a>
   <span> · </span>
   <a href="/docs/README_de.md">Deutsche Readme</a>
 </h3>
 
 <p align="center">
-  <a href="https://github.com/KodoPengin/Del_U3A/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-  <a href="https://github.com/KodoPengin/Del_U3A/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-  <a href="https://github.com/KodoPengin/Del_U3A/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
-  <a href="https://github.com/KodoPengin/Del_U3A/issues"><img alt="Issues" src="https://img.shields.io/github/issues/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
+  <a href="https://github.com/KodoPengin/SteamCleaner/issues"><img alt="Issues" src="https://img.shields.io/github/issues/KodoPengin/Del_U3A.svg?color=0088ff" /></a>
   <a href="https://gameindustry.eu"><img alt="Website" src="https://img.shields.io/badge/website-online-blue?url=https%3A%2F%2Fgameindustry.eu?color=0088ff" /></a>
 </p>
 
@@ -72,8 +72,8 @@ This project provides a script that helps users automatically identify and delet
 ## 🐞 Bugs & Contributions
 
 Found a bug or typo? Have an improvement suggestion?
-- Open an [issue](https://github.com/KodoPengin/Del_U3A/issues)
-- Start a [discussion](https://github.com/KodoPengin/Del_U3A/discussions)
+- Open an [issue](https://github.com/KodoPengin/SteamCleaner/issues)
+- Start a [discussion](https://github.com/KodoPengin/SteamCleaner/discussions)
 
 I'm always happy to improve the project based on your feedback.
 
