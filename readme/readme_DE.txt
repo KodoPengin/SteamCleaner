@@ -62,6 +62,8 @@ Die folgenden Dateien werden aus Kompatibilitätsgründen NICHT gelöscht:
 
 Für GameCrashUploader.exe: manuell durch leere 0-KB-Datei ersetzen.
 
+Wie immer gibt es Ausnahmen: Einige Spiele sind fest mit ihren Crash-Handlern verknüpft und lassen sich nach deren Entfernung möglicherweise nicht mehr starten. In solchen Fällen müsst ihr die betroffenen Titel manuell reparieren über Spieleinstellungen in eurer Bibliothek → Installierte Dateien → Dateien auf Fehler überprüfen.
+
 ------------------------------------------------------------
 6. Projektinformationen, Hashes
 ------------------------------------------------------------
@@ -72,3 +74,4 @@ Version:  3.0.0
 Datum:    10.05.2025
 
 Dateiname: SteamCleaner.bat
+Sha256: 27e2c97d88816a69fc8ed15d4f85b475645becf8074e14532e6f820278052e76

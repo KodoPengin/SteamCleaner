@@ -62,6 +62,8 @@ The following files are not deleted due to potential compatibility issues with s
 
 For GameCrashUploader.exe: delete the file manually and replace it with a dummy 0 KB .exe file with the same name.
 
+As always, there are exceptions: Some games are tightly integrated with their crash handlers and may fail to launch after removal. In such cases, you need to manually repair the affected titles via Title settings in your library → Installed Files → Verify integrity of game files.
+
 ------------------------------------------------------------
 6. Project Info & Hashes
 ------------------------------------------------------------
@@ -72,3 +74,4 @@ Version:  3.0.0
 Date:     May 10, 2025
 
 Filename: SteamCleaner.bat
+Sha 256: 97f19aee56448b34d09a0071fc6fdeb24ff5b8f063f9d32f920cf3890c2ef2f3
