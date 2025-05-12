@@ -74,4 +74,4 @@ Version:  3.0.1
 Datum:    12.05.2025
 
 Dateiname: SteamCleaner.bat
-Sha256: 3c788e033ceb479ff97f74dcb6687d02345c6c34c697b549aa5ce265e54ca299
+Sha256: 75cfeb5c613365cfdf1e7635a374d02b05cb7f19ddc1789344aaed3b618761a6
