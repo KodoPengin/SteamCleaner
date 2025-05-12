@@ -98,7 +98,7 @@ echo %GRUEN%2. Entferne System-Crashdumps ^& Analytics...%RESET%
 set "foldersToDelete=%userprofile%\AppData\Local\CrashDumps %userprofile%\AppData\Local\CEF\User Data\Crashpad %userprofile%\AppData\Local\CrashReportClient %userprofile%\AppData\Local\T2GP Launcher\app-1.0.4.2070 %userprofile%\AppData\Local\GameAnalytics %userprofile%\AppData\Local\UnrealEngine %userprofile%\AppData\Local\UniSDK %userprofile%\AppData\Local\BuffPanel"
 for %%i in (%foldersToDelete%) do if exist "%%i" rd /s /q "%%i"
 
-echo %GRUEN%2. Bereinige Systemordner: Crashdaten, Nutzungsanalysen, lokale Anwendungsdaten und Anwendungsreste......%RESET%
+echo %GRUEN%2. Bereinige Systemordner: Crashdaten, Nutzungsanalysen, lokale Anwendungsdaten und Anwendungsreste...%RESET%
 setlocal enabledelayedexpansion
 
 set "deletedCount=0"
