@@ -1,5 +1,5 @@
-Steam Cleaner – Version 3.0.0 (GameIndustry.eu)
-Letzte Aktualisierung: 10.05.2025
+Steam Cleaner – Version 3.0.1 (GameIndustry.eu)
+Letzte Aktualisierung: 12.05.2025
 Autor: Pengin
 
 ------------------------------------------------------------
@@ -70,8 +70,8 @@ Wie immer gibt es Ausnahmen: Einige Spiele sind fest mit ihren Crash-Handlern ve
 Website:  https://gameindustry.eu/
 Spenden:  https://gameindustry.eu/donations/
 Kontakt:  https://gameindustry.eu/contact/
-Version:  3.0.0
-Datum:    10.05.2025
+Version:  3.0.1
+Datum:    12.05.2025
 
 Dateiname: SteamCleaner.bat
-Sha256: 049c7ad8983e38969065af10362a578faea0203ee06f4e55d90490056547a2c4
+Sha256: 3c788e033ceb479ff97f74dcb6687d02345c6c34c697b549aa5ce265e54ca299

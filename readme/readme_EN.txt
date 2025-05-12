@@ -1,5 +1,5 @@
-Steam Cleaner – Version 3.0.0 (GameIndustry.eu)
-Last updated: May 10, 2025
+Steam Cleaner – Version 3.0.1 (GameIndustry.eu)
+Last updated: May 12, 2025
 Author: Pengin
 
 ------------------------------------------------------------
@@ -70,8 +70,8 @@ As always, there are exceptions: Some games are tightly integrated with their cr
 Website:  https://gameindustry.eu/
 Donate:   https://gameindustry.eu/donations/
 Contact:  https://gameindustry.eu/contact/
-Version:  3.0.0
-Date:     May 10, 2025
+Version:  3.0.1
+Date:     May 12, 2025
 
 Filename: SteamCleaner.bat
-Sha 256: 97a0f38a6796dc8caf53a0e387ba8d458186f1020176ab61d9b5be8c7e0fad43
+Sha 256: 523dac1cbbb5afc4de5721cff2a4752440224e6f49489abadaff757a11fd57c5
