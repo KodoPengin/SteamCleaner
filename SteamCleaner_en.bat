@@ -94,7 +94,7 @@ rd /s /q "bin\cef\cef.win7" 2>nul
 rd /s /q "logs" 2>nul
 rd /s /q "dumps" 2>nul
 
-echo %GREEN%2. Removing system crash dumps and analytics data...%RESET%
+echo %GREEN%2. Cleaning system folders: crash data, usage analytics, local app data and residual files...%RESET%
 set "foldersToDelete=%userprofile%\AppData\Local\CrashDumps %userprofile%\AppData\Local\CEF\User Data\Crashpad %userprofile%\AppData\Local\CrashReportClient %userprofile%\AppData\Local\T2GP Launcher\app-1.0.4.2070 %userprofile%\AppData\Local\GameAnalytics %userprofile%\AppData\Local\UnrealEngine %userprofile%\AppData\Local\UniSDK %userprofile%\AppData\Local\BuffPanel"
 for %%i in (%foldersToDelete%) do if exist "%%i" rd /s /q "%%i"
 
@@ -113,9 +113,9 @@ for %%i in (%filelist%) do (
 )
 echo.
 if !deletedCount! gtr 0 (
-    echo [INFO] !deletedCount! third-party crash-related files were removed.
+    echo [INFO] !deletedCount! Files and crash components from third-party vendors have been removed.
 ) else (
-    echo [INFO] No third-party crash files found.
+    echo [INFO] No files or crash components from third-party vendors found.
 )
 endlocal
 

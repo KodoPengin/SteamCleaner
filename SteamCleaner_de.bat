@@ -39,7 +39,7 @@ echo 2^) Bibliothek-Cache leeren (httpcache, librarycache, stats)
 echo 3^) Download- ^& Shadercache leeren
 echo 4^) HTML-Cache leeren
 echo 5^) Modding-Reste (CSS-Dateien) entfernen
-echo 6^) About
+echo 6^) Info
 echo 7^) Beenden
 echo.
 
@@ -98,7 +98,7 @@ echo %GRUEN%2. Entferne System-Crashdumps ^& Analytics...%RESET%
 set "foldersToDelete=%userprofile%\AppData\Local\CrashDumps %userprofile%\AppData\Local\CEF\User Data\Crashpad %userprofile%\AppData\Local\CrashReportClient %userprofile%\AppData\Local\T2GP Launcher\app-1.0.4.2070 %userprofile%\AppData\Local\GameAnalytics %userprofile%\AppData\Local\UnrealEngine %userprofile%\AppData\Local\UniSDK %userprofile%\AppData\Local\BuffPanel"
 for %%i in (%foldersToDelete%) do if exist "%%i" rd /s /q "%%i"
 
-echo %GRUEN%3. Drittanbieter Crash-Dateien entfernen...%RESET%
+echo %GRUEN%2. Bereinige Systemordner: Crashdaten, Nutzungsanalysen, lokale Anwendungsdaten und Anwendungsreste......%RESET%
 setlocal enabledelayedexpansion
 
 set "deletedCount=0"
@@ -114,9 +114,9 @@ for %%i in (%filelist%) do (
 )
 echo.
 if !deletedCount! gtr 0 (
-    echo [INFO] !deletedCount! Drittanbieter-Crashdateien wurden entfernt.
+    echo [INFO] !deletedCount! Daten und Crashkomponenten von Drittanbietern wurden entfernt.
 ) else (
-    echo [INFO] Super, keine Drittanbieter-Crashdateien gefunden.
+    echo [INFO] Keine Daten oder Crashkomponenten von Drittanbietern gefunden.
 )
 
 endlocal
