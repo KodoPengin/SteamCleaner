@@ -164,7 +164,6 @@ rd /s /q "steamapps\shadercache" >nul 2>&1
 rd /s /q "steamapps\temp" >nul 2>&1
 rd /s /q "steamapps\workshop\downloads" >nul 2>&1
 rd /s /q "steamapps\workshop\temp" >nul 2>&1
-del /f /q "steam\games\*.ico" >nul 2>&1
 echo %GREEN%Done.%RESET%
 pause
 goto menu
